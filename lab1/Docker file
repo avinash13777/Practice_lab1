@@ -1,0 +1,13 @@
+FROM alpine:3.14
+WORKDIR /root/practicelab/Practice_lab1/lab1
+COPY package.json /root/practicelab/Practice_lab1/lab1/
+RUN npm install
+# As per the request we are starting the alpine after deployment
+CMD ["npm", "start"]
+ENV NODE_ENV production
+EXPOSE 9000
+
+#Process of building a Dockerfile
+
+
+
